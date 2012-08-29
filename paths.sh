@@ -1,0 +1,17 @@
+#!/bin/bash
+PATH=/usr/bin
+PATH=${PATH}:/bin
+PATH=${PATH}:/usr/sbin
+PATH=${PATH}:/sbin
+PATH=${PATH}:/usr/local/bin
+PATH=${PATH}:/usr/X11/bin
+PATH=${PATH}:/usr/local/git/bin
+PATH=${PATH}:/usr/local/mysql/bin
+PATH=${PATH}:/Users/kandinski/Dropbox/bin
+PATH=${PATH}:/Users/kandinski/Dropbox/bin/eb/api/bin
+PATH=${PATH}:/Volumes/Solid1b/android-sdk-macosx/tools/
+PATH=${PATH}:/Volumes/Solid1b/android-sdk-macosx/platform-tools
+PATH=${PATH}:/Users/kandinski/Dropbox/bin/eb/api/bin
+PATH=${PATH}:/Users/kandinski/Dropbox/bin/eb/eb/macosx/python2.7
+PATH=${PATH}:/Users/kandinski/sites/inc/mongodb-osx-x86_64-2.0.7/bin
+PATH=${PATH}:/Volumes/Solid1b/opt/local/bin
