@@ -1,6 +1,6 @@
 #!/bin/bash -x
 function sp(){
-export  WEB_PRO=J$PWD                                                       # SET DIR AS WEB_PROJ
+export  WEB_PROJ=$PWD                                                       # SET DIR AS WEB_PROJ
 echo THE CURRENT PROJECT IS $WEB_PROJ
 }
 
