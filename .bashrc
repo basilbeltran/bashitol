@@ -8,7 +8,8 @@ PATH=$PATH
 
 export AWS_CREDENTIAL_FILE=~/.awscreds
 export WEB_SITES=~/sites
-export WEB_PROJ
+export WEB_PROJ=`cat $CFGHOME/.current_project`
+
 export ELASTICBEANSTALK_URL=us-east-1a
 parse_git_branch(){ git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'; }
 export PS1="\n\t \w \$(parse_git_branch) \n \$ "

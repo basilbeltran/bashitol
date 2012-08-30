@@ -1,7 +1,8 @@
 #!/bin/bash -x
 function sp(){
 export  WEB_PROJ=$PWD                                                       # SET DIR AS WEB_PROJ
-echo THE CURRENT PROJECT IS $WEB_PROJ
+echo "Current Project is $WEB_PROJ"
+echo $WEB_PROJ > $CFGHOME/.current_project
 }
 
 function f(){              # aka "where did i put that damn string?"
