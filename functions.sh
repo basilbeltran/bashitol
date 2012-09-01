@@ -1,8 +1,10 @@
 #!/bin/bash -x
-function sp(){
-export  WEB_PROJ=$PWD                                                       # SET DIR AS WEB_PROJ
-echo "Current Project is $WEB_PROJ"
-echo $WEB_PROJ > $CFGHOME/.current_project
+
+
+function sp(){ # SET CURRENT DIR AS WEB_PROJ
+  export  WEB_PROJ=$PWD       
+  echo "Current Project is $WEB_PROJ"
+  echo $WEB_PROJ > $CFGHOME/.current_project
 }
 
 function f(){              # aka "where did i put that damn string?"
@@ -15,10 +17,8 @@ grep $1 */*/*/*/* | grep $2
 }
 
 
-#allow cd -- to distplay a dir history (10 items) and
-#      cd -3 to change to the dir third in the stack
-#allow cd -- to distplay a dir history (10 items) and 
-#      cd -3 to change to the dir third in the stack
+#       "cd --"  will distplay a dir history (10 items) 
+#       "cd -3"  will change to the dir third in the stack
 cd_func ()
 
 {
